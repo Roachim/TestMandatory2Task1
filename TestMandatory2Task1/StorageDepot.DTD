@@ -1,0 +1,50 @@
+﻿<!--<!ELEMENT TestCase (Given, When, Then)>
+<!ELEMENT Given (Text)>
+<!ELEMENT When (Text)>
+<!ELEMENT Then (Text)>
+
+<!ELEMENT Text (#PCDATA)>-->
+
+<!--<!ELEMENT Storage_Depot (Send_Depot, Refill_Depot, Check_Depot)>-->
+
+
+<!ELEMENT Test_Cases (Case*)>
+
+<!ELEMENT Case (Number, (Send_Depot | Refill_Depot | Check_Depot))>
+
+<!ELEMENT Number (#PCDATA)>
+
+
+<!ELEMENT Send_Depot (When, Action, Expect)>
+
+<!ELEMENT Refill_Depot (When, Action, Expect)>
+
+<!ELEMENT Check_Depot (When, Action, Expect)>
+
+<!--Send_Depot elements-->
+<!--Refill_Depot elements-->
+<!--Check_Depot elements-->
+
+<!ELEMENT When (Hardware, Current_Amount)>
+<!ELEMENT Action (Send_Amount| Receive_Amount| Check_Amount)>
+<!ELEMENT Expect (Expected_Amount)>
+
+<!--When-->
+<!ELEMENT Hardware (#PCDATA)>
+<!ELEMENT Current_Amount (#PCDATA)>
+
+
+<!--Action-->
+<!ELEMENT Send_Amount (#PCDATA)>
+<!ELEMENT Receive_Amount (#PCDATA)>
+<!ELEMENT Check_Amount (#PCDATA)>
+
+
+
+<!--Expect-->
+<!--<!ELEMENT Expected_hardware (#PCDATA)>-->
+<!ELEMENT Expected_Amount (#PCDATA)>
+<!--<!ELEMENT Expected_Destination (#PCDATA)>-->
+
+
+

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE Test_Cases SYSTEM "StorageDepot.DTD">
+<Test_Cases>
+  <Case>
+    <Number>1</Number>
+    <Send_Depot>
+      <When>
+        <Hardware>Chip</Hardware>
+        <Current_Amount>4000</Current_Amount>
+      </When>
+      <Action>
+        <Send_Amount>500</Send_Amount>
+      </Action>
+      <Expect>
+        <Expected_Amount>3500</Expected_Amount>
+      </Expect>
+    </Send_Depot>
+  </Case>
+</Test_Cases>
